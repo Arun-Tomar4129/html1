@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="file.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="body1">
+    <div class="container">
+       
+        <div class="form-1">
+          <form class="login-form" id="form1" onsubmit="handleLogin(event)" >
+           <h1 class="log">login</h1>
+           <label for="int1">Username:</label><br>
+           <input type="text" placeholder="enter username" id="int1"  class="input1 int" required><br>
+           <label for="int2">Password</label><br>
+           <input type="password" id="int2"  placeholder="enter password" class="input1" required><br>
+           <input type="submit"class="btn2 submit_login"><br>
+           <a href="#" class="forget" >Forget Password?</a><hr>
+           <p> don't have account?<button class="signup btn1"onclick="sign_up()" >signup</button></p>
+          </form>
+          <form class="signin-form" id="form2" onsubmit="handleSignup(event)">
+            <h1 class="sig">signup</h1>
+            <label for="int3">Username:</label><br>
+            <input type="text" id="int3" placeholder="enter username"  class="input1 enter_username" required><br>
+            <label for="int4">Email:</label><br>
+            <input type="email" id="int4" placeholder="enter Email"  class="input1" required><br>
+            <label for="int5">Password</label><br>
+            <input type="password" id="int5" placeholder="enter password" class="input1" ><br>
+            <input type="submit" class="btn2 submit_signup"><hr>
+            <p>You have already account?<button class="loginup btn1" onclick="login_up()">login</button></p>
+           </form>
+        </div> 
+    </div>
+</div>
+<div class="body2" >
+    <div class="navbar">
+        <span id="first">
+            <div class="imagecount"><img src="user-login.webp" class="user-logo"></div>
+            <div class="user_name">User Name :</div>
+        </span>
+        <input type="file" class="upload" accept="image/*">
+        <span><h1 class="heading1">Welcome</h1></span>
+        <span id="first_3">
+            <svg class="sidebar" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-list-ul" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+            </svg>
+        </span>
+       
+    <!-- end of body2 -->
+</div>
+<div id="first_4">
+    <ul>
+        <li><div class="user3"  ><img src="user-login.webp"class="image-sidebar" style="height: 80px;width: 80px; object-fit: cover; border-radius: 50%;"></div></li><hr>
+        <li><a href="#">contact</a></li>
+        <li><a href="#" id="profile">profile</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#" id="setting">setting</a></li>
+        <li><a href="#" id="logout">logout</a></li>
+    </ul>
+</div>
+</div>
+<div class="userimage_middle" onclick="show()"><img src="user-login.webp"class="middle_image" style="height: 80px;width: 80px; object-fit: cover; border-radius: 50%; position: absolute;"></div>
+<div class="setting_box">
+    <ul>
+        <li><a href="#"><i class="fa-solid fa-circle-user"></i>account</a></li>
+        <li><a href="#"><i class="fa-solid fa-user-lock"></i>privacy</a></li>
+        <li><a href="#"><i class="fa-solid fa-server"></i>storage and data</a></li>
+        <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>help</a></li>
+        <li><a href="#"><i class="fa-solid fa-eject"></i></i>aboout</a></li>
+        <li><a href="#">invite friend</a></li><hr>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i> instagram</a></li>
+        <li><a href="#"><i class="fa-brands fa-facebook"></i>facebook</a></li>
+        <li><a href="#"><i class="fa-brands fa-threads"></i>thread</a></li>
+        <button class="back_setting"><i class="fa-solid fa-circle-left"></i> back</button>
+    </ul>
+</div>
+<div class="profile_box">
+    <span><img src="user-login.webp"class="profile_image1" style="height: 130px;width: 130px; object-fit: cover; border-radius: 50%;"></span><hr>
+    <span>Name:</span><br>
+    <span>Bio:</span><br>
+    <span>Phone No:</span><br>
+    <span>link:</span><br>
+    <button class="profile_back"><i class="fa-solid fa-circle-left"></i>back</button>
+
+</div>
+<div class="sim">hello</div>
+    <script src="file.js"></script>
+</body>
+</html>

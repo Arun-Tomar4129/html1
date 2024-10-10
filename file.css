@@ -1,0 +1,319 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+}
+.navbar{
+    height: 90px;
+    border: 5px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image:url("peaceful-water-landscape-photo-l.jpg") ;
+    background-size: cover;
+}
+#first{
+    
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    gap: 4px;
+}
+.user-logo{
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    object-fit: cover;
+    transition: 0.2s ease-in-out;  
+   
+}
+
+.user-logo:hover{
+    height: 80px;
+    width: 80px;
+    border: 2px solid rgb(117, 50, 50);
+
+}
+#first_3 svg{
+   padding: 10px;
+}
+.sidebar{
+position: fixed;
+top: 1px;
+font-size: 10px;
+font-weight: 400px;
+right: 1px;
+}
+#first_4 {
+    position: absolute;
+    top: 10px; /* Adjust based on your layout */
+    right: 10px;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    width: 150px;
+    display: none; /* Initially hidden */
+    transition: 0.5 ease-in-out;
+    background-image: url("R.jpeg");
+    background-size: cover;
+    margin-bottom: 0;
+    padding-bottom: 0%;
+    transition: 0.2s ease-in-out;
+}
+#first_4 ul {
+   
+    list-style-type: none;
+    padding: 0 ;
+    padding-top: 0px;
+    
+}
+#first_4 ul li {
+    text-align: center;
+    padding: 10px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+
+}
+#first_4 ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+#first_4 ul li:hover {
+    border-radius: 10px;
+    background-color:rgb(105, 134, 207,0.4);
+}
+.sidebar {
+    position: absolute;
+    cursor: pointer;
+}
+.upload{
+    display: none;
+}
+.imagecount{
+    object-fit:cover;
+    border-radius: 50%;
+    overflow: hidden; /* Hide any overflow */
+    background-color: transparent; /* Placeholder background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    object-fit: cover;
+    transition: 0.3s ease-in-out;
+    
+}
+
+
+
+.container{
+    
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    background-image: url("peaceful-water-landscape-photo-l.jpg");
+    background-size: cover;
+    border: 2px solid black;
+    position: absolute;
+    top: 400%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+    animation: shadowChange 3s infinite;
+}
+
+@keyframes shadowChange {
+    0% {
+        box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.7);
+    }
+    25% {
+        box-shadow: 0px 0px 20px rgba(0, 255, 0, 0.7);
+    }
+    50% {
+        box-shadow: 0px 0px 30px rgba(0, 0, 255, 0.7);
+    }
+    75% {
+        box-shadow: 0px 0px 40px rgba(255, 255, 0, 0.7);
+    }
+    100% {
+        box-shadow: 0px 0px 50px rgba(255, 0, 255, 0.7);
+    }
+}
+.form-1{
+    margin: 60px ;
+}
+.btn1{
+    border: none;
+    background: transparent;
+    color: blue;
+   
+}
+.btn2{
+    border: 2px solid rgba(64, 200, 221,0.5) ;
+    border-radius: 5px;
+    margin: 5px ;
+    margin-top: 20px;
+    align-items: center;
+    width: 90%;
+    background-image: url("R.jpeg");
+    background-size: cover;
+    box-shadow: 1px 9px 10px rgba(1, 3, 16, 0.9);
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+.btn2:hover {
+    box-shadow: 1px 9px 10px rgba(108, 11, 12, 0.9);
+    border: 2px solid rgba(33, 16, 180, 0.5);
+}
+.btn2:hover + {
+    color: rgb(222, 54, 54);
+}
+
+
+#form1{
+    display: block;
+}
+#form2{
+    display: none;
+}
+form h1 {
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+}
+.forget{
+    text-decoration: none;
+    color: rgb(142, 30, 202);
+    font-weight: 900px;
+    margin-left: 50px;
+   
+    
+}
+.input1{
+    border: none;
+    border-bottom: 2px solid #331cb1;
+    outline: none;
+    color: rgb(27, 45, 147);
+    font-size: 18px;
+   
+    background: transparent;
+}
+.input1::placeholder{
+    color: rgba(232, 203, 203,0.6);
+}
+.sim{
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background-color: red;
+    display: none;
+}
+.setting_box {
+    position: absolute;
+    height: 700px;
+    width: 400px;
+    border: 4px solid rgb(23, 108, 164);
+    background-color: rgb(235, 237, 235);
+    border-radius: 60px;
+    z-index: -1; 
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    display: none; 
+
+  }
+.setting_box ul li{
+    width: 380px;
+    text-transform: capitalize;
+    margin-top: 15px;
+    list-style-type: none;
+    transition: 0.2s ease-in-out;
+}
+.setting_box ul li:hover{
+    width: 300px;
+    border-radius: 5px;
+    background-color: rgba(136, 136, 231, 0.2);
+}
+.setting_box ul li a{
+    font-weight: 900px;
+    font-size: 30px;
+    text-decoration: none;
+
+}
+.setting_box ul li a i{
+    color: black;
+    margin:10px;
+}
+.setting_box ul button{
+    background: none;
+    border: none;
+    font-size: 40px;
+    position: absolute;
+    right: 20%;
+}
+.body2.hidden {
+    display: none;
+}
+.profile_box{
+    margin-top: 100px;
+    position: absolute;
+    height: 500px;
+    width: 400px;
+    border: 4px solid rgb(23, 108, 164);
+    background-color: rgb(235, 237, 235);
+    border-radius: 60px;
+    z-index: -2;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    background-color: rgb(141, 175, 221);
+    font-size: 30px;
+    display: none;
+    transition: 0.3 ease-in-out;
+  }
+  .profile_box span{
+    margin-left: 20px;
+  }
+  .profile_back{
+   position: absolute;
+   right: 30px;
+   margin-top: 60px;
+   background: none;
+   border: none;
+   font-size: 40px;
+   text-transform: capitalize;
+
+  }
+  .profile_image1{
+    margin-left:30%;
+    margin-top: 20px;
+
+  }
+  .userimage_middle {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 350%);
+    display: none;
+}
+.userimage_middle.active {
+    display: block;
+    box-shadow: -10px -10px 10px rgb(69, 135, 248);
+}
+.middle_image {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 50px;
+            width: 50px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+    <script>
+        const box = document.querySelector(".box");
+
+        // Toggle color on click
+        box.addEventListener('click', function () {
+            // Check the current background color and toggle it
+            if (box.style.backgroundColor === "black") {
+                box.style.backgroundColor = "blue";
+            } else {
+                box.style.backgroundColor = "black";
+            }
+        });
+    </script>
+</body>
+</html>
